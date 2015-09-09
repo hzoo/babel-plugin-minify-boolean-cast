@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-minify-boolean-cast",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Turn Boolean(a) to !!a",
   "repository": "hzoo/babel-plugin-minify-boolean-cast",
   "license": "MIT",
