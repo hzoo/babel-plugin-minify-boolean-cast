@@ -8,9 +8,11 @@ export default function ({ Plugin, types: t }) {
       CallExpression: function(node) {
         var callee = this.get("callee");
         if (callee.isIdentifier({ name: "Boolean" })) {
-            if (node.arguments.length > 0) {
-              return t.unaryExpression("!", t.unaryExpression("!", node.arguments[0]));
-            }
+          if (node.arguments.length > 0) {
+            return t.unaryExpression("!", t.unaryExpression("!", node.arguments[0]));
+          } else {
+            return t.literal(false);
+          }
         }
       }
     }

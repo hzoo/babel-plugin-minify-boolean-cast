@@ -2,6 +2,24 @@
 
 Turn boolean casts from Boolean(a) to !!a
 
+## Example
+
+**In**
+
+```javascript
+Boolean();
+Boolean(1);
+Boolean(a);
+```
+
+**Out**
+
+```javascript
+false;
+!!1;
+!!a;
+```
+
 ## Installation
 
 ```sh
